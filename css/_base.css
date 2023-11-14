@@ -1,0 +1,106 @@
+:root {
+  --primary-color: rgb(220, 20, 60);
+  --primary-color-lighter: hsl(348, 83%, 70%);
+  --primary-color-light: hsl(348, 83%, 55%);
+  --primary-color-dark: hsl(348, 90%, 40%);
+  --primary-color-darker: hsl(348, 90%, 30%);
+
+  --secondary-color: royalblue;
+
+  /* OPACITY */
+  --primary-color-light-opacity-90: hsla(0, 17%, 2%, 0.9);
+  --primary-color-light-opacity-80: hsla(348, 83%, 55%, 0.8);
+  --primary-color-light-opacity-70: hsla(348, 83%, 55%, 0.7);
+  --primary-color-light-opacity-60: hsla(348, 83%, 55%, 0.6);
+
+  --primary-color-opacity-90: hsla(348, 83%, 47%, 0.9);
+  --primary-color-opacity-80: hsla(348, 83%, 47%, 0.8);
+  --primary-color-opacity-70: hsla(348, 83%, 47%, 0.7);
+  --primary-color-opacity-60: hsla(348, 83%, 47%, 0.6);
+
+  --primary-color-dark-opacity-90: hsla(348, 90%, 40%, 0.9);
+  --primary-color-dark-opacity-80: hsla(348, 90%, 40%, 0.8);
+  --primary-color-dark-opacity-70: hsla(348, 90%, 40%, 0.7);
+  --primary-color-dark-opacity-60: hsla(348, 90%, 40%, 0.6);
+
+  --grey-color-opacity: #222222ca;
+
+  --white-color-opacity-90: rgba(177, 161, 161, 0.9);
+  --white-color-opacity-80: rgba(177, 161, 161, 0.8);
+  --white-color-opacity-70: rgba(177, 161, 161, 0.7);
+  --white-color-opacity-60: rgba(177, 161, 161, 0.6);
+
+  /* GREYS */
+
+  --grey-color-1: #181818;
+  --grey-color-2: #222;
+  --grey-color-3: #2c2c2c;
+  --grey-color-4: #333;
+  --grey-color-5: #444;
+  --grey-color-6: #5c5c5c;
+  --grey-color-7: #717171;
+  --grey-color-8: #8f8f8f;
+  --grey-color-9: #aaa;
+  --grey-color-10: #ccc;
+
+  /* WHITES */
+
+  --white-color-1: #fff;
+  --white-color-2: hsl(0, 0%, 94%);
+  --white-color-3: #eee;
+  --white-color-4: #ddd;
+
+  /* BORDER */
+  --border-radius: 1.2rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth !important;
+  font-family: "Sen", "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 100%;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}

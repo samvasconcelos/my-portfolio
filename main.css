@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Palanquin:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Quicksand:wght@300;400;500&family=Sen:wght@400;500;600;700&family=Young+Serif&display=swap");
+@import "./css/_base.css";
+@import "./css/_animations.css";
+@import "./css/_nav_btns.css";
+@import "./css/_logo.css";
+@import "./css/_header.css";
+@import "./css/_about.css";
+@import "./css/_skills.css";
+@import "./css/_projetos.css";
+@import "./css/_contato.css";
+
+/* ------------------------------------------------- */
+
+/* inset: top, right, bottom, left */
+/* mix-blend-mode: multiply; */
+/* isolation: isolate; */
+
+/* ----------------------------  M A I N ---------------------------- */
+
+#main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------- HELPER CLASSES --------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.section:not(#about) {
+  background-color: var(--grey-color-2);
+  border-bottom: 1px solid var(--grey-color-4);
+  padding-block: 7rem 10rem !important;
+}
+
+.section-shadow-dark {
+  box-shadow: inset 0 -4rem 8.5rem -1rem var(--grey-color-1);
+}
+
+.section-shadow-light {
+  box-shadow: inset 0 -4rem 8.5rem -1rem var(--grey-color-9);
+}
+
+.text {
+  color: var(--white-color-4);
+}
+.light--header {
+  background: linear-gradient(
+    to bottom left,
+    var(--grey-color-10),
+    var(--white-color-3)
+  ) !important;
+  border-bottom: 1px solid var(--grey-color-10) !important;
+}
+
+.dark-box {
+  background-color: var(--grey-color-4);
+}
+/* .light-box {
+  background: linear-gradient(
+    to right,
+    var(--grey-color-10),
+    var(--grey-color-9)
+  );
+} */
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.light--section {
+  background-color: var(--white-color-4) !important;
+  border-bottom: 1px solid var(--grey-color-10) !important;
+}
+
+.dark--text {
+  color: var(--grey-color-4) !important;
+}
+
+.hidden {
+  display: none;
+}
+.hidden-opacity {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 1;
+  translate: 0 0;
+  filter: blur(0);
+}
+
+.light-box {
+  /* border-color: var(--grey-color-4); */
+}
+
+.scroll {
+  -ms-scroll-snap-type: none;
+  scroll-snap-type: none;
+}
+
+/* ------ MENU TOGGLE BTN ------- */
+.menu-open {
+  animation: menu-open 1s cubic-bezier(0.54, 0.19, 0.21, 1.27) 150ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  display: flex;
+}
+.line-top-open {
+  width: 5rem;
+  transform: translateY(1.2rem) rotateZ(226deg);
+}
+
+.line-middle-open {
+  transform: perspective(1000px) rotateY(90deg) rotateX(360deg);
+  opacity: 0;
+}
+
+.line-bottom-open {
+  width: 5rem;
+  transform: translateY(-1.4rem) rotateZ(-226deg);
+}
+/* ---------------------------------- MEDIA QUERIES ----------------------------------- */

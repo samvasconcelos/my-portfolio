@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  display: inline;
+  height: 100%;
+  padding-block: 1rem;
+  width: 10rem;
+  transition: 550ms ease-in-out;
+}
+
+@media screen and (min-width: 800px) {
+  .logo img {
+    height: 100%;
+    width: 10rem;
+  }
+  .logo:hover img {
+    scale: 1.3;
+    rotate: z 720deg;
+  }
+}

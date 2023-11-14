@@ -1,0 +1,165 @@
+
+.contato__subtitulo {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.contato__icons {
+  width: 100%;
+  margin-bottom: -7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contato__icons > * {
+  padding-block: 2rem;
+}
+
+.contato--1 {
+  width: max(25rem, 30%);
+  display: flex;
+  padding-block: 5rem;
+  justify-content: space-evenly;
+}
+
+.contato--2 {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  translate: 3rem 0;
+}
+
+.contato--2 div {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.contato--1 i,
+.contato--2 i {
+  font-size: 3rem;
+  transition: 400ms;
+}
+
+.contato--2 i {
+  margin-inline: 1.5rem;
+}
+
+.contato--1 i:hover,
+.contato--2 i:hover {
+  cursor: pointer;
+  scale: 1.2;
+  text-shadow: 0 0 0.4rem var(--white-color-4);
+}
+
+.contato .logo {
+  padding-block: 0;
+  margin-block: 3rem 5rem;
+  height: 8rem;
+}
+
+.contato .logo img {
+  height: 100%;
+}
+.contato .logo:hover img {
+  scale: 1;
+  rotate: z 0deg;
+  translate: 0 0;
+}
+
+/* ---- CONTACT TIPTOOLS ---- */
+
+.fa-envelope::after {
+  content: "Send e-mail";
+  display: inline-block;
+  position: absolute;
+  width: 15rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 1rem 1rem;
+  background-color: var(--grey-color-1);
+  font-family: "Sen", "Poppins", sans-serif;
+  font-size: 1.6rem;
+  transform: translate(-9rem, -3rem) rotateX(270deg) scale(0.4);
+  color: var(--white-color-1) !important;
+  opacity: 0;
+
+  transition: 500ms;
+}
+.fa-instagram::after {
+  content: "Instagram";
+  display: inline-block;
+  position: absolute;
+  width: 14rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 1rem 1rem;
+  background-color: var(--grey-color-1);
+  font-family: "Sen", "Poppins", sans-serif;
+  font-size: 1.6rem;
+  transform: translate(-8.2rem, -3rem) rotateX(270deg) scale(0.4);
+  text-transform: capitalize;
+  color: var(--white-color-1) !important;
+  opacity: 0;
+
+  transition: 500ms;
+}
+.fa-linkedin::after {
+  content: "Linked-in";
+  display: inline-block;
+  position: absolute;
+  width: 13rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 1rem 1rem;
+  background-color: var(--grey-color-1);
+  font-family: "Sen", "Poppins", sans-serif;
+  font-size: 1.6rem;
+  transform: translate(-7.7rem, -3rem) rotateX(270deg) scale(0.4);
+  text-transform: capitalize;
+  color: var(--white-color-1) !important;
+  opacity: 0;
+
+  transition: 500ms;
+}
+.fa-envelope:hover::after,
+.fa-instagram:hover::after,
+.fa-linkedin:hover::after {
+  text-shadow: none;
+  opacity: 1;
+}
+.fa-envelope:hover::after {
+  transform: translate(-8.9rem, -3.3rem) rotateX(0deg) scale(0.8);
+}
+.fa-instagram:hover::after {
+  transform: translate(-8.2rem, -3.5rem) rotateX(0deg) scale(0.8);
+}
+.fa-linkedin:hover::after {
+  transform: translate(-7.7rem, -3.5rem) rotateX(0deg) scale(0.8);
+}
+
+.copy {
+  color: var(--primary-color-light);
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .copy {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+@media screen and (min-width: 1200px) {
+  .contato__icons {
+    height: 80%;
+  }
+}

@@ -1,0 +1,98 @@
+/* ---------------------------  S K I L L S  --------------------------- */
+#skills {
+  padding-block: 8rem 4rem;
+}
+.skills__grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(4, fit-content);
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 3rem 0;
+  gap: 3rem;
+  color: var(--grey-color-3);
+}
+
+.skill__name,
+.icon {
+  font-weight: 600;
+  padding-block: 0.2rem;
+  transition: 400ms;
+}
+
+.skill,
+.skill__container {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+  background-size: 200% 200%;
+  border-radius: 1.2rem;
+  width: 15rem;
+  padding: 1.5rem;
+  scale: 0.8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: 400ms;
+}
+
+/* ----- SKILLS IN PROGRESS ----- */
+.skill__container-progress {
+  padding-block: 2.6rem;
+  max-height: 15.7rem;
+}
+.skill__container-react {
+  color: var(--grey-color-9);
+}
+.skill__react-text {
+  font-style: italic;
+  font-weight: 1000;
+}
+.fa-react {
+  /* margin-top: -0.5rem; */
+  margin-bottom: 1rem;
+}
+.progress {
+  opacity: 0.5;
+  color: var(--grey-color-6);
+  margin-top: -1rem;
+}
+.tailwind {
+  color: var(--grey-color-3);
+}
+.icon {
+  padding-top: 2rem;
+  font-size: 8rem;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media screen and (min-width: 500px) {
+  .skill__container-light:hover i {
+    text-shadow: 0rem 0rem 0.5rem var(--white-color-1);
+  }
+
+  .skill__container-light:hover {
+    box-shadow: 0 0 0.5rem 0.1rem var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding-inline: 20rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .skills__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 18%;
+  }
+
+  .skill__container {
+    scale: 1;
+  }
+}

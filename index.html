@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="fontawesome/svgs/regular/tailwind-css-white.svg"
+    />
+    <!-- <script type="module" defer src="./js/main.js"></script> -->
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 1.25rem;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0px 5px 10px 1px #22222289,
+          inset 0px -5px 10px 1px #22222289;
+        background: #888;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          to bottom right,
+          hsl(348, 83%, 55%),
+          hsl(348, 90%, 40%),
+          hsl(348, 90%, 30%)
+        );
+        border-radius: 0.4rem;
+        box-shadow: 0px 4px 5px 1px #33333383;
+        transition: 1s;
+      }
+
+      /* Handle on hover */
+      /* ::-webkit-scrollbar-thumb:hover {
+      } */
+    </style>
+    <title>Samuel Vasconcelos - Porfolio Website</title>
+  </head>
+  <body>
+    <!-- DARK MODE BUTTON -->
+    <button class="theme-btn">
+      <div class="theme-circle-btn"></div>
+    </button>
+
+    <!--------------------  H E A D E R  --------------------->
+
+    <header id="header" class="header">
+      <!------------------ NAV ------------------->
+      <nav id="nav" class="nav dark">
+        <!------- LOGO ------->
+        <div class="nav__logo">
+          <a class="logo" href="#"
+            ><img src="./assets/logo/Logo-S.svg " alt="Logo icon"
+          /></a>
+        </div>
+
+        <!------ NAV BAR ------>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__btn nav__btn--1" href="#header">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__btn nav__btn--2" href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__btn nav__btn--3" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__btn nav__btn--4" href="#projetos">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__btn nav__btn--5" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!------ HEADER CONTENT ------->
+      <div class="header__content">
+        <div class="header__dev-logo__container">
+          <img
+            class="full-logo"
+            src="./assets/logo/Logo-SamDev.svg"
+            alt="Full Logo"
+          />
+        </div>
+
+        <div class="header__content-greet">
+          <!--------------- CHAMADA "OLA" --------------->
+          <h1 class="header__chamada text">
+            <span class="chamada__animacao"></span>
+            <span class="chamada__cursor">|</span>
+          </h1>
+        </div>
+
+        <div class="header__content-text">
+          <p class="header__content-intro text">I'm</p>
+          <div class="header__content-name">
+            <!-- <h2 class="header__tags text"><</h2> -->
+            <h2 class="header__name text">
+              <span class="header__name--red">Sam</span> Vasconcelos <br />
+              a Web <span class="header__name--red">Dev</span>eloper
+            </h2>
+            <!-- <h2 class="header__tags text">/></h2> -->
+          </div>
+        </div>
+
+        <div class="header__content-btns">
+          <a class="header__btn--about cta cta--1" href="#about"> About Sam </a>
+          <a class="header__btn--contact cta cta--2" href="#contact">
+            Contact Sam
+          </a>
+        </div>
+      </div>
+
+      <!--------- BACKGROUND ELEMENT  ---------->
+      <!-- <div class="background-object"></div> -->
+    </header>
+
+    <!--------------------  M A I N  ----------------------->
+    <main id="main">
+      <!------------ ABOUT ------------>
+      <section id="about" class="about section section-shadow-dark">
+        <h2 class="title-h2 text">About</h2>
+
+        <div class="about__statement">
+          <div class="about__profile">
+            <div class="about__content-outer-circle"></div>
+            <div class="about__content-profile-container">
+              <img src="icons/Sam_LowerQ.jpg" alt="Samuel Vasconcelos" />
+            </div>
+          </div>
+          <p class="about__statement-title text">
+            I'm a <br />
+            <span class="about__statement--characteristics text"
+              >Front-End <br />
+              Web Developer</span
+            ><span class="aspas text">"</span>
+          </p>
+          <p class="about__statement--text text">
+            I'm a young tech enthusiast who has found his calling in the world
+            of web development. I enjoy challenges and I'm always eager to
+            expand my knowledge, crafting incredible projects along the way. My
+            aspirations include building projects with stunning, responsive UI's
+            and exceptional UX. I'm committed to continually improve my skills
+            in the pursuit of what I love.
+          </p>
+
+          <p class="about__statement--text text">
+            Similar to the English language, I have learned web development by
+            myself, with a few online courses to help. I strive to learn more,
+            to be proficient and efficient, and to achieve excellence in
+            developing amazing projects with an amazing team. I really enjoy
+            building and creating things, and transforming ideas into reality.
+          </p>
+        </div>
+      </section>
+
+      <!------------ SKILLS ------------>
+
+      <section id="skills" class="skills section section-shadow-dark">
+        <h2 class="title-h2 text">Skills</h2>
+
+        <div class="skills__grid">
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">HTML5</p>
+            <i class="fa-brands fa-html5 icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">CSS3</p>
+            <i class="fa-brands fa-css3-alt icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">JavaScript</p>
+            <i class="fa-brands fa-square-js icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">Sass</p>
+            <i class="fa-brands fa-sass icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">Git & GitHub</p>
+            <i class="fa-brands fa-git icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">Responsiveness</p>
+            <i class="fa-solid fa-mobile icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">SEO</p>
+            <i class="fa-brands fa-searchengin icon text"></i>
+          </div>
+          <div class="skill__container skill__container-light">
+            <p class="skill__name text">UX / UI</p>
+            <i class="fa-solid fa-user icon text"></i>
+          </div>
+          <div class="skill__container skill__container-progress">
+            <p class="skill__name progress">React</p>
+            <i class="fa-brands fa-react progress icon"></i>
+            <p class="progress skill__react-text">in progress</p>
+          </div>
+
+          <div class="skill__container skill__container-progress">
+            <p class="skill__name progress">Tailwind</p>
+            <svg
+              style="opacity: 0.4"
+              role="img"
+              viewBox=" -2 1 28 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Tailwind CSS</title>
+              <path
+                d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                fill="#5c5c5c"
+              ></path>
+            </svg>
+            <p class="progress skill__react-text">in progress</p>
+          </div>
+        </div>
+      </section>
+
+      <!------------ PROJECTS ------------>
+
+      <section id="projetos" class="projetos section section-shadow-dark">
+        <h2 class="title-h2 text">Projects</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="project__container dark-box">
+          <div class="project">
+            <a
+              class="project__link"
+              href="https://samdev-tip-calculator.netlify.app"
+            >
+              <h3 class="project-title text">Tip Calculator</h3>
+              <div class="project-img__container">
+                <div class="project-img"></div>
+              </div>
+            </a>
+          </div>
+          <div class="project-description__container">
+            <h3 class="project-description__title">Description</h3>
+            <p class="project-description text">
+              This is a simple but completely functional tip calcultor. It
+              contains guards clauses to prevent the user from entering
+              incorrect data, like letters or negative numbers etc. <br /><br />
+              This was my first solo little project I built to practice my
+              JavaScript skills, so I didn't focus so much on the HTML or CSS.
+            </p>
+          </div>
+        </div>
+
+        <!------- UNDER CONSTRUCTION ------->
+
+        <div class="project__container-brick">
+          <p class="wip text">
+            Under construction <br />
+            <span class="reticencias">.</span>
+          </p>
+        </div>
+
+        <div class="bricks__container brick-dark-background">
+          <div class="bricks">
+            <div class="brick brick-1"></div>
+            <div class="brick brick-2"></div>
+            <div class="brick brick-3"></div>
+            <div class="brick brick-4"></div>
+            <div class="brick brick-tilt"></div>
+            <div class="brick-shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!------------ CONTATO ------------>
+
+      <section id="contact" class="contato section section-shadow-dark">
+        <h2 class="title-h2 text">Get in touch</h2>
+        <p class="contato__subtitulo text">Let's talk &nbsp; :)</p>
+
+        <div class="contato__icons">
+          <div class="contato--1">
+            <a href="https://www.linkedin.com/in/sam-vasconcelos/"
+              ><i class="fa-brands fa-linkedin text"></i
+            ></a>
+            <a href="https://www.instagram.com/sam.vasccls/"
+              ><i class="fa-brands fa-instagram text"></i
+            ></a>
+            <a href="mailto:sam.vasconcelos.dev@gmail.com"
+              ><i class="fa-solid fa-envelope text"></i
+            ></a>
+          </div>
+          <div class="contato--2">
+            <div class="text">
+              <i class="fa-brands fa-whatsapp text"></i>+55 (12) 9 9708-7978
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-location-dot text"></i> São José dos Campos
+              - SP
+            </div>
+          </div>
+
+          <p class="copy">
+            Copyright © 2023 Samuel Vasconcelos. All Rights Reserved
+          </p>
+
+          <div class="logo">
+            <img src="./assets/logo/Logo-S.svg " alt="Logo icon" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-------------- TOGGLE MENU --------------->
+    <a class="menu-toggle-btn">
+      <div class="line line-top"></div>
+      <div class="line line-middle"></div>
+      <div class="line line-bottom"></div>
+    </a>
+    <div class="overlay hidden">
+      <ul class="overlay__nav">
+        <li class="overlay__nav-item">
+          <a class="overlay-btn" href="#header">Home</a>
+        </li>
+        <li class="overlay__nav-item">
+          <a class="overlay-btn" href="#about">About</a>
+        </li>
+        <li class="overlay__nav-item">
+          <a class="overlay-btn" href="#skills">Skills</a>
+        </li>
+        <li class="overlay__nav-item">
+          <a class="overlay-btn" href="#projetos">Projects</a>
+        </li>
+        <li class="overlay__nav-item">
+          <a class="overlay-btn" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="module" defer src="./js/main.js"></script>
+  </body>
+</html>
