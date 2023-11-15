@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/_base.css" />
+    <link rel="stylesheet" href="./css/_nav_btns.css" />
+    <link rel="stylesheet" href="./css/_animations.css" />
+    <link rel="stylesheet" href="./css/_logo.css" />
+    <link rel="stylesheet" href="./css/_cta-btns.css" />
+    <link rel="stylesheet" href="./css/_header.css" />
+    <link rel="stylesheet" href="./css/_about.css" />
+    <link rel="stylesheet" href="./css/_projetos.css" />
+    <link rel="stylesheet" href="./css/_skills.css" />
+    <link rel="stylesheet" href="./css/_contato.css" />
+    <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link
       rel="stylesheet"
@@ -55,9 +65,9 @@
       <nav id="nav" class="nav dark">
         <!------- LOGO ------->
         <div class="nav__logo">
-          <a class="logo" href="#"
-            ><img src="./assets/logo/Logo-S.svg " alt="Logo icon"
-          /></a>
+          <a class="logo" href="#">
+            <!-- <img src="./assets/logo/Logo-S.svg " alt="Logo icon"/> -->
+          </a>
         </div>
 
         <!------ NAV BAR ------>
@@ -82,13 +92,7 @@
 
       <!------ HEADER CONTENT ------->
       <div class="header__content">
-        <div class="header__dev-logo__container">
-          <img
-            class="full-logo"
-            src="./assets/logo/Logo-SamDev.svg"
-            alt="Full Logo"
-          />
-        </div>
+        <div class="header__dev-logo__container"></div>
 
         <div class="header__content-greet">
           <!--------------- CHAMADA "OLA" --------------->
@@ -111,9 +115,11 @@
         </div>
 
         <div class="header__content-btns">
-          <a class="header__btn--about cta cta--1" href="#about"> About Sam </a>
+          <div class="cta--1__container"></div>
+          <a class="header__btn--about cta cta--1" href="#about"> About Me </a>
+          <div class="cta--2__container"></div>
           <a class="header__btn--contact cta cta--2" href="#contact">
-            Contact Sam
+            Contact
           </a>
         </div>
       </div>
@@ -308,7 +314,7 @@
           </p>
 
           <div class="logo">
-            <img src="./assets/logo/Logo-S.svg " alt="Logo icon" />
+            <!-- <img src="./assets/logo/Logo-S.svg " alt="Logo icon" /> -->
           </div>
         </div>
       </section>

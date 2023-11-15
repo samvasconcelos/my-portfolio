@@ -41,6 +41,7 @@
     transform: scale(1.2) rotateZ(720deg);
   }
   .header__dev-logo__container {
+    background-image: none;
     background-image: url("../assets/logo/Logo-SamDev.svg");
   }
 }
