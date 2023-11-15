@@ -278,12 +278,12 @@
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(-3rem);
     text-shadow: 0 12px 10px #222;
   }
 
   50% {
-    transform: translateY(-3rem);
+    transform: translateY(0);
     text-shadow: 0 15px 10px #222;
   }
 }

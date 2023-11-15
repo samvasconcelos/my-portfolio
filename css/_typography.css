@@ -1,7 +1,6 @@
 .title-h2 {
   z-index: 3;
   text-align: center;
-  color: var(--white-color-3);
   font-size: 5rem;
   padding-block: 0 3rem;
 }
