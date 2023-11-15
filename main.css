@@ -88,7 +88,7 @@ html .dark--text {
 
 .reveal {
   opacity: 1;
-  translate: 0 0;
+  transform: translate(0, 0);
   filter: blur(0);
 }
 

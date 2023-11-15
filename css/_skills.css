@@ -15,7 +15,7 @@
 
 .skill__name,
 .icon {
-  font-weight: 600;
+  font-weight: 1500;
   padding-block: 0.2rem;
   transition: 400ms;
 }
@@ -38,19 +38,26 @@
 }
 
 /* ----- SKILLS IN PROGRESS ----- */
+.progress__react-name {
+  transform: translateY(1rem);
+}
 .skill__container-progress {
+  position: relative;
   padding-block: 2.6rem;
   max-height: 15.7rem;
 }
 .skill__container-react {
   color: var(--grey-color-9);
 }
+.skill__react-icon {
+  padding-top: 2rem;
+  font-size: 8rem;
+}
 .skill__react-text {
   font-style: italic;
-  font-weight: 1000;
+  font-weight: 100;
 }
 .fa-react {
-  /* margin-top: -0.5rem; */
   margin-bottom: 1rem;
 }
 .progress {

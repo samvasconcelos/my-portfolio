@@ -107,6 +107,10 @@
     height: 100vh;
     padding: 10rem 0;
   }
+
+  .header__content-btns {
+    height: 10rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -116,7 +120,7 @@
   }
   .chamada__animacao,
   .chamada__cursor {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .header__content {

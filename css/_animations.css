@@ -108,14 +108,12 @@
 }
 @-webkit-keyframes tilt {
   50% {
-    rotate: 98deg;
-    translate: 0 -1.95rem;
+    transform: translate(0rem, -2rem) rotate(98deg);
   }
 }
 @keyframes tilt {
   50% {
-    rotate: 98deg;
-    translate: 0 -1.95rem;
+    transform: translate(0rem, -2rem) rotate(98deg);
   }
 }
 

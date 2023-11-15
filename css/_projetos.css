@@ -125,31 +125,28 @@
 }
 
 .brick-1 {
-  translate: -5rem 20rem;
+  transform: translate(-5rem, 20rem);
   box-shadow: 0 0.5rem 2rem 0.1rem var(--grey-color-opacity),
     inset -0.3rem -0.3rem 1rem #ff5833c4, inset 0.2rem 0.2rem 0.5rem #ff5833c4;
 }
 
 .brick-2 {
-  translate: 5rem 16rem;
+  transform: rotateX(180deg) translate(4.9rem, -16rem);
   box-shadow: 0 -0.5rem 2rem 0.1rem var(--grey-color-opacity),
     inset -0.3rem -0.3rem 1rem #ff5833c4, inset 0.2rem 0.2rem 0.5rem #ff5833c4;
-  rotate: 180deg;
 }
 
 .brick-3 {
-  translate: 0 8rem;
+  transform: translate(0, 8rem);
 }
 
 .brick-4 {
-  translate: -11.3rem 5rem;
-  rotate: -45deg;
+  transform: translate(-11.3rem, 5rem) rotate(-45deg);
 }
 
 .brick-tilt {
   transform-origin: right center;
-  translate: 0rem -2rem;
-  rotate: 93deg;
+  transform: translate(0rem, -2rem) rotate(93deg);
 
   -webkit-animation: tilt 2500ms;
 

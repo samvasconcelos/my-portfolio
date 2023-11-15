@@ -47,7 +47,7 @@
 .about__content-profile-container {
   width: 13rem;
   height: 13rem;
-  scale: 0.9;
+  transform: scale(0.9);
   border-radius: 100%;
   overflow: hidden;
 }
@@ -55,7 +55,7 @@
 .about__content-profile-container img {
   opacity: 0;
   width: 15rem;
-  translate: -1.6rem -0.5rem;
+  transform: translate(-1.6rem, -0.5rem);
 
   /* ANIMATION */
   -webkit-animation: img-blur;
@@ -77,12 +77,12 @@
 .aspas {
   color: var(--white-color-3);
   display: block;
+  height: 8rem;
   position: absolute;
   top: 25rem;
   right: 20%;
   font-size: 16rem;
   font-family: "palanquin", sans-serif;
-  height: 8rem;
 }
 
 .about__statement-title {
@@ -94,11 +94,11 @@
 
 .about__statement--text {
   margin-top: 3rem;
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 100;
   color: var(--white-color-3);
   line-height: 2.2rem;
-  width: 100%;
 }
 
 .about__statement--characteristics {
