@@ -29,6 +29,8 @@ const menuLines = document.querySelectorAll(".line");
 const menuBtn = document.querySelector(".menu-toggle-btn");
 const menuBtnItems = document.querySelectorAll(".overlay-btn");
 
+// ---------------------------------------------
+
 // INTERSECTION
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -37,8 +39,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
-// ---------------------------------------------
 
 // --------------------
 //      FUNCTIONS

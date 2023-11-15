@@ -2,6 +2,7 @@
 @import "./css/_base.css";
 @import "./css/_animations.css";
 @import "./css/_nav_btns.css";
+@import "./css/_cta-btns.css";
 @import "./css/_logo.css";
 @import "./css/_header.css";
 @import "./css/_about.css";
@@ -74,8 +75,8 @@
   border-bottom: 1px solid var(--grey-color-10) !important;
 }
 
-.dark--text {
-  color: var(--grey-color-4) !important;
+html .dark--text {
+  color: var(--grey-color-4);
 }
 
 .hidden {
@@ -89,10 +90,6 @@
   opacity: 1;
   translate: 0 0;
   filter: blur(0);
-}
-
-.light-box {
-  /* border-color: var(--grey-color-4); */
 }
 
 .scroll {

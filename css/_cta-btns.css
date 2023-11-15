@@ -1,0 +1,114 @@
+.header__content-btns {
+  width: min(40rem, 100%);
+  height: 15rem;
+  margin: 0 auto;
+  grid-row: 4/5;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cta {
+  display: block;
+  position: relative;
+  height: 4.5rem;
+  padding: 1.2rem 1rem;
+  border-radius: var(--border-radius);
+  width: 15rem;
+  text-align: center;
+  color: var(--white-color-4);
+
+  transition: 400ms;
+}
+
+.cta--1 {
+  background: linear-gradient(
+    to top left,
+    var(--primary-color-darker),
+    var(--primary-color-light)
+  );
+  box-shadow: inset -0.1rem -0.1rem 0.4rem 0.1rem var(--primary-color-light);
+}
+.cta--2 {
+  background: linear-gradient(
+    to top left,
+    var(--grey-color-1),
+    var(--grey-color-5)
+  );
+  box-shadow: inset -0.1rem -0.1rem 0.5rem 0.1rem var(--grey-color-5);
+}
+
+.cta--1:hover {
+  box-shadow: inset 0rem 0rem 0.8rem 0.1rem var(--primary-color-light),
+    0 0 1rem var(--primary-color-dark);
+}
+.cta--2:hover {
+  box-shadow: inset 0rem 0rem 0.8rem 0.5rem var(--grey-color-5),
+    0 0 1rem var(--grey-color-3);
+}
+
+@media screen and (min-width: 700px) {
+  .cta--1::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    height: 140%;
+    width: 113%;
+    transform: translate(-2rem, -4rem) scale(1.25);
+    padding: -0.8rem;
+    border-radius: 2.25rem;
+    border: 2px solid var(--primary-color);
+
+    transition: 400ms ease;
+  }
+
+  .cta--1:hover::after {
+    letter-spacing: 5rem;
+    padding: 1rem;
+    opacity: 1;
+    transform: translate(-2rem, -4rem) scale(1);
+    box-shadow: 0 0 0.8rem 0.1rem var(--primary-color);
+  }
+
+  .cta--2::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    height: 140%;
+    width: 113%;
+    transform: translate(-2rem, -4rem) scale(1.25);
+    padding: -0.8rem;
+    border-radius: 2.25rem;
+    border: 2px solid var(--grey-color-6);
+
+    transition: 300ms ease-in-out;
+  }
+
+  .cta--2:hover::after {
+    padding: 1rem;
+    opacity: 1;
+    transform: translate(-2rem, -4rem) scale(1);
+    box-shadow: 0 0 0.8rem 0.1rem var(--grey-color-5);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .cta--1:hover::after {
+    letter-spacing: 5rem;
+    padding: 1rem;
+    opacity: 1;
+    transform: translate(-2rem, -4rem) scale(1);
+    box-shadow: 0 0 0.8rem 0.1rem var(--primary-color);
+  }
+
+  .cta--2:hover::after {
+    padding: 1rem;
+    opacity: 1;
+    transform: translate(-2rem, -4rem) scale(1);
+    box-shadow: 0 0 0.8rem 0.1rem var(--grey-color-5);
+  }
+}

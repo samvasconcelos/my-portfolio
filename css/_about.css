@@ -2,6 +2,8 @@
 #about {
   position: relative;
   z-index: 1;
+  height: calc(-webkit-fit-content + 15rem);
+  height: calc(-moz-fit-content + 15rem);
   height: calc(fit-content + 15rem);
   width: 100%;
   padding-block: 12rem 8rem;
@@ -37,7 +39,9 @@
   /* filter: blur(.23rem); */
 
   /* ANIMATION */
+  -webkit-animation: rotate-circle 4.5s infinite alternate, appear 3.5s forwards;
   animation: rotate-circle 4.5s infinite alternate, appear 3.5s forwards;
+  -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
 
@@ -55,8 +59,11 @@
   translate: -1.6rem -0.5rem;
 
   /* ANIMATION */
+  -webkit-animation: img-blur;
   animation: img-blur;
+  -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -199,8 +206,11 @@
     translate: -2rem -1rem;
 
     /* ANIMATION */
+    -webkit-animation: img-blur;
     animation: img-blur;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
 

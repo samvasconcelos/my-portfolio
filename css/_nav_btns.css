@@ -55,7 +55,6 @@
   font-size: 2.5rem;
   font-weight: 800;
   transform: translate(-0.5rem, 0.3rem);
-  perspective: 50px;
   opacity: 0;
 
   transition: 700ms;
@@ -76,7 +75,6 @@
   font-size: 2.5rem;
   font-weight: 800;
   transform: translate(-2.2rem, 0.3rem);
-  perspective: 50px;
   opacity: 0;
 
   transition: 700ms;
@@ -84,34 +82,42 @@
 .nav__btn:hover::before,
 .nav__btn:hover::after {
   opacity: 1;
+  text-shadow: 0 0.1rem 0.3rem var(--primary-color);
 }
 .nav__btn:hover::before {
-  text-shadow: 0 0.1rem 0.3rem var(--primary-color);
-  transform: translate(-3.9rem, -0.3rem) rotateX(360deg);
+  transform: translate(-3.9rem, -0.4rem) rotateX(360deg);
 }
 .nav__btn:hover::after {
-  text-shadow: 0 0.1rem 0.3rem var(--primary-color);
-  transform: translate(1.6rem, -0.3rem) rotateX(360deg);
+  transform: translate(1.6rem, -0.4rem) rotateX(360deg);
 }
 
 #nav .nav__item {
+  -webkit-animation-name: nav__btn-reveal;
   animation-name: nav__btn-reveal;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 #nav .nav__item:nth-of-type(2) {
+  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 #nav .nav__item:nth-of-type(3) {
+  -webkit-animation-delay: 1.8s;
   animation-delay: 1.8s;
 }
 #nav .nav__item:nth-of-type(4) {
+  -webkit-animation-delay: 2.2s;
   animation-delay: 2.2s;
 }
 #nav .nav__item:nth-of-type(5) {
+  -webkit-animation-delay: 2.6s;
   animation-delay: 2.6s;
 }
 
