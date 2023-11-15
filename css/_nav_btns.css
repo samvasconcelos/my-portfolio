@@ -212,7 +212,7 @@
   color: var(--white-color-4);
 }
 
-/* --------------- DARK THEME BUTTON --------------- */
+/* -------------------------------- DARK THEME BUTTON -------------------------------- */
 
 .theme-btn {
   z-index: 4;
@@ -253,10 +253,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  width: 35px;
-  height: 35px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 25px;
-  translate: 0.5rem 0;
+  transform: translate (0.5rem, 0);
   box-shadow: inset 5px 5px 10px var(--grey-color-9),
     inset -5px -5px 10px var(--grey-color-1);
 

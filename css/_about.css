@@ -36,7 +36,6 @@
   height: 14rem;
   border-radius: 100%;
   opacity: 0;
-  /* filter: blur(.23rem); */
 
   /* ANIMATION */
   -webkit-animation: rotate-circle 4.5s infinite alternate, appear 3.5s forwards;
