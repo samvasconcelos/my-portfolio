@@ -6,17 +6,14 @@
   height: calc(-moz-fit-content + 15rem);
   height: calc(fit-content + 15rem);
   width: 100%;
-  padding-block: 12rem 8rem;
+  padding-block: 10rem 8rem;
   margin-top: -5rem;
   background-color: var(--grey-color-2);
   border-bottom: 1px solid var(--grey-color-4);
 }
 
-.title-h2 {
-  text-align: center;
-  color: var(--white-color-3);
-  font-size: 5rem;
-  padding-block: 0 3rem;
+.about__title {
+  padding-bottom: 7rem;
 }
 
 /* ------------- PROFILE ------------ */

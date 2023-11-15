@@ -1,0 +1,306 @@
+/* --------------------------- NAV BAR ---------------------------- */
+.nav {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 7rem;
+  width: 100%;
+  margin: 0 auto;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+}
+.nav img {
+  width: 100px;
+}
+.nav__menu {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  /* text-align: center; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  transform: translateY(-0.4rem);
+}
+
+/* ----- NAV-BTNS & HOVER ----- */
+.nav__btn {
+  z-index: 8;
+  padding: 1rem 1.5rem;
+  color: #111;
+  margin-inline: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
+  border-radius: 1rem;
+  color: var(--white-color-4);
+  transition: 400ms;
+}
+.nav__btn::before {
+  content: "<";
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  position: absolute;
+  background: -webkit-linear-gradient(
+    var(--primary-color-light),
+    var(--primary-color-darker)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 800;
+  transform: translate(-0.5rem, 0.3rem);
+  opacity: 0;
+
+  transition: 700ms;
+}
+
+.nav__btn::after {
+  content: ">";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  position: absolute;
+  background: -webkit-linear-gradient(
+    var(--primary-color-light),
+    var(--primary-color-darker)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 800;
+  transform: translate(-2.2rem, 0.3rem);
+  opacity: 0;
+
+  transition: 700ms;
+}
+.nav__btn:hover::before,
+.nav__btn:hover::after {
+  opacity: 1;
+  text-shadow: 0 0.1rem 0.3rem var(--primary-color);
+}
+.nav__btn:hover::before {
+  transform: translate(-3.9rem, -0.4rem) rotateX(360deg);
+}
+.nav__btn:hover::after {
+  transform: translate(1.6rem, -0.4rem) rotateX(360deg);
+}
+
+#nav .nav__item {
+  -webkit-animation-name: nav__btn-reveal;
+  animation-name: nav__btn-reveal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#nav .nav__item:nth-of-type(2) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+#nav .nav__item:nth-of-type(3) {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+#nav .nav__item:nth-of-type(4) {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+}
+#nav .nav__item:nth-of-type(5) {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+}
+
+.nav__btn:focus {
+  outline: 1px solid crimson;
+}
+.nav__item:active {
+  scale: 0.9;
+}
+.nav__item {
+  padding: 0.5rem 0;
+  margin-inline: 5px;
+  opacity: 0;
+
+  transition: scale 400ms;
+}
+
+/* --------------------------- NAV MENU TOGGLE BTN ------------------------- */
+
+.menu-toggle-btn {
+  z-index: 5;
+  position: fixed;
+  right: 5%;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+  transform: scale(0.8);
+  width: 5rem;
+  height: 3rem;
+  display: none;
+}
+
+.line {
+  width: 4rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  background-color: var(--white-color-4);
+
+  transition: 500ms;
+}
+.line-top {
+  position: absolute;
+  top: 0;
+}
+.line-middle {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.line-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* --------- OVERLAY --------- */
+
+.overlay {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  background-color: var(--grey-color-opacity);
+  overflow: hidden;
+
+  transition: 400ms;
+}
+
+.overlay__nav {
+  padding: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.overlay__nav-item {
+  padding: 1.5rem 0rem;
+}
+
+.overlay-btn {
+  padding: 1.5rem 2rem;
+  letter-spacing: 0.4rem;
+  font-size: 2rem;
+  color: var(--white-color-4);
+}
+
+/* -------------------------------- DARK THEME BUTTON -------------------------------- */
+
+.theme-btn {
+  z-index: 4;
+  position: fixed;
+  right: -1%;
+  top: 6.5rem;
+  transform: scale(0.7);
+  width: 10rem;
+  height: 5rem;
+  background: linear-gradient(to top left, #333, var(--white-color-4));
+  border: 3px solid var(--grey-color-7);
+  border-radius: 10rem;
+  border: 0.3rem solid var(--grey-color-3);
+  transform-style: preserve-3d;
+  box-shadow: inset 0 0 2.5rem var(--grey-color-5),
+    inset 1.5rem 0.5rem 1rem var(--grey-color-2);
+  cursor: pointer;
+  transform: scale(0.6);
+
+  transition: 300ms;
+  outline: transparent;
+}
+.theme-btn:focus {
+  transition: 0;
+  outline: 0.3rem solid var(--primary-color);
+}
+
+.theme-btn:hover {
+  box-shadow: inset 0 0 2.5rem #555, inset 1.5rem 0.5rem 1rem #222,
+    0rem 0rem 0.5rem 0.5rem var(--primary-color);
+}
+
+.theme-circle-btn {
+  z-index: 4;
+  display: block;
+  background-color: #333;
+  background-image: url(../icons/moon-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  transform: translate(0.5rem, 0);
+  box-shadow: inset 5px 5px 10px var(--grey-color-9),
+    inset -5px -5px 10px var(--grey-color-1);
+
+  /* transition */
+  transition: all 400ms;
+}
+
+.icon--change {
+  display: block;
+  background-color: #eee;
+  background-image: url(../icons/sun-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  transform: translate(48px, 0px) rotateZ(22deg);
+  box-shadow: inset -5px -5px 10px #555;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media screen and (max-width: 800px) {
+  .menu-toggle-btn {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .nav__menu {
+    display: flex;
+  }
+
+  .theme-btn {
+    right: 2%;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .nav__btn {
+    font-size: 1.5rem;
+    transform: translate(0, 1rem);
+  }
+}

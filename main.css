@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Palanquin:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Quicksand:wght@300;400;500&family=Sen:wght@400;500;600;700&family=Young+Serif&display=swap");
 @import "./css/_base.css";
+@import "./css/_typography.css";
 @import "./css/_animations.css";
-@import "./css/_nav_btns.css";
+@import "./css/_nav_&_btns.css";
 @import "./css/_cta-btns.css";
 @import "./css/_logo.css";
 @import "./css/_header.css";
 @import "./css/_about.css";
 @import "./css/_skills.css";
+@import "./css/_skills_orbit.css";
 @import "./css/_projetos.css";
 @import "./css/_contato.css";
 
@@ -29,19 +31,23 @@
 /* --------------------------------- HELPER CLASSES --------------------------------- */
 /* ---------------------------------------------------------------------------------- */
 
+/* ------- SECTIONS ------- */
 .section:not(#about) {
   background-color: var(--grey-color-2);
   border-bottom: 1px solid var(--grey-color-4);
-  padding-block: 7rem 10rem !important;
+  padding-block: 7rem 10rem;
 }
-
 .section-shadow-dark {
   box-shadow: inset 0 -4rem 8.5rem -1rem var(--grey-color-1);
 }
-
 .section-shadow-light {
   box-shadow: inset 0 -4rem 8.5rem -1rem var(--grey-color-9);
 }
+.light--section {
+  background-color: var(--white-color-4) !important;
+  border-bottom: 1px solid var(--grey-color-10) !important;
+}
+/* ------- SECTIONS ------- */
 
 .text {
   color: var(--white-color-4);
@@ -55,24 +61,18 @@
   border-bottom: 1px solid var(--grey-color-10) !important;
 }
 
-.dark-box {
+/* ------- PROJECT CONTAINERS ------- */
+
+.dark-project {
   background-color: var(--grey-color-4);
 }
-/* .light-box {
-  background: linear-gradient(
-    to right,
-    var(--grey-color-10),
-    var(--grey-color-9)
-  );
-} */
+.light-project {
+  border: 2px solid var(--grey-color-4);
+  background: linear-gradient(to top, var(--grey-color-7), var(--grey-color-8));
+}
 
 .opacity-1 {
   opacity: 1;
-}
-
-.light--section {
-  background-color: var(--white-color-4) !important;
-  border-bottom: 1px solid var(--grey-color-10) !important;
 }
 
 html .dark--text {
@@ -98,6 +98,9 @@ html .dark--text {
 }
 
 /* ------ MENU TOGGLE BTN ------- */
+.dark-box {
+  background-color: var(--grey-color-4);
+}
 .menu-open {
   animation: menu-open 1s cubic-bezier(0.54, 0.19, 0.21, 1.27) 150ms;
   animation-fill-mode: forwards;

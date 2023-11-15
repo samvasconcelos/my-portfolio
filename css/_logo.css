@@ -15,7 +15,7 @@
   align-items: center;
   height: 80%;
 
-  transition: 550ms;
+  transition: 550ms ease-in-out;
 }
 
 /* ----- FULL LOGO ------ */
@@ -32,7 +32,9 @@
   grid-column: 1/ -1;
 }
 
-@media screen and (min-width: 800px) {
+/* --------------------- MEDIA QUERIES --------------------- */
+
+@media screen and (min-width: 600px) {
   .logo {
     height: 70%;
     background-image: url("../assets/logo/Logo-S.svg");
@@ -41,6 +43,12 @@
     transform: scale(1.2) rotateZ(720deg);
   }
   .header__dev-logo__container {
+    display: flex;
+    justify-content: center;
     background-image: url("../assets/logo/Logo-SamDev.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18rem;
+    width: 100%;
   }
 }

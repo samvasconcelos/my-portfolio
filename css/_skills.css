@@ -1,6 +1,15 @@
 #skills {
   padding-block: 8rem 4rem;
 }
+#skills .skills__title {
+  /* ANIMATION */
+  animation: float 1000ms ease-in-out 0 infinite;
+  animation-name: float;
+  animation-duration: 5s;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 .skills__grid {
   display: grid;
   align-items: center;
