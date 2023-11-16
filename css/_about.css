@@ -6,20 +6,20 @@
   height: calc(-moz-fit-content + 15rem);
   height: calc(fit-content + 15rem);
   width: 100%;
-  padding-block: 10rem 8rem;
+  padding: 10rem 0;
   margin-top: -5rem;
   background-color: var(--grey-color-2);
   border-bottom: 1px solid var(--grey-color-4);
 }
 
 .about__title {
-  padding-bottom: 7rem;
+  padding-bottom: 3rem;
 }
 
 /* ------------- PROFILE ------------ */
 
 .about__profile {
-  margin-top: -4rem;
+  /* margin-top: -4rem; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
 .about__content-profile-container img {
   opacity: 0;
   width: 15rem;
-  transform: translate(-1.6rem, -0.5rem);
+  transform: translate(0, -0.5rem);
 
   /* ANIMATION */
   -webkit-animation: img-blur;
@@ -76,7 +76,7 @@
   display: block;
   height: 8rem;
   position: absolute;
-  top: 25rem;
+  top: 28rem;
   right: 20%;
   font-size: 16rem;
   font-family: "palanquin", sans-serif;
@@ -151,7 +151,7 @@
   .aspas {
     display: block;
     position: absolute;
-    top: 27rem;
+    top: 33rem;
     right: 15%;
     font-size: 16rem;
     font-family: "palanquin", sans-serif;
@@ -251,6 +251,6 @@
 
   .aspas {
     top: -5rem;
-    right: 40%;
+    right: 38%;
   }
 }

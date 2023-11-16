@@ -9,8 +9,8 @@
   height: 7rem;
   width: 100%;
   margin: 0 auto;
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 }
 .nav img {
   width: 100px;
@@ -23,7 +23,6 @@
   /* text-align: center; */
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  transform: translateY(-0.4rem);
 }
 
 /* ----- NAV-BTNS & HOVER ----- */

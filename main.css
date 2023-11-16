@@ -68,7 +68,16 @@
 }
 .light-project {
   border: 2px solid var(--grey-color-4);
-  background: linear-gradient(to top, var(--grey-color-7), var(--grey-color-8));
+  background: var(--grey-color-10);
+}
+
+/* ------ GENERAL ------- */
+
+.hidden {
+  display: none;
+}
+.hidden-opacity {
+  opacity: 0;
 }
 
 .opacity-1 {
@@ -77,13 +86,6 @@
 
 html .dark--text {
   color: var(--grey-color-4);
-}
-
-.hidden {
-  display: none;
-}
-.hidden-opacity {
-  opacity: 0;
 }
 
 .reveal {

@@ -41,7 +41,7 @@
 }
 
 .cta--1:hover {
-  box-shadow: inset 0rem 0rem 0.8rem 0.2rem var(--primary-color-light),
+  box-shadow: inset 0rem 0rem 0.8rem 0.2rem var(--primary-color-dark),
     0 0 1rem var(--primary-color-dark);
 }
 .cta--2:hover {
@@ -49,7 +49,7 @@
     0 0 1rem var(--grey-color-3);
 }
 
-/* ----- CTA BEFORE / AFTER ----- */
+/* ----- CTA AFTER ----- */
 
 .cta--1::after {
   content: "";
@@ -70,7 +70,7 @@
   letter-spacing: 5rem;
   padding: 1rem;
   opacity: 1;
-  transform: translate(-2rem, -4rem) scale(1);
+  transform: translate(-2rem, -4rem) scale(1.05);
   box-shadow: 0 0 0.8rem 0.1rem var(--primary-color);
 }
 

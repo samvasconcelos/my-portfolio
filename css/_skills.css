@@ -2,6 +2,9 @@
   padding-block: 8rem 4rem;
 }
 #skills .skills__title {
+  display: inline-block;
+  padding: 2rem 2.5rem;
+
   /* ANIMATION */
   animation-name: float;
   animation-duration: 5s;
