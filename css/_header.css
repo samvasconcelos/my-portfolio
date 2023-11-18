@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  grid-template-rows: 3/4;
+  grid-row: 3/4;
   grid-column: 1/-1;
 }
 .header__content-intro {

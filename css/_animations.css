@@ -133,13 +133,13 @@
     color: var(--primary-color);
     perspective: 10px;
     opacity: 0;
-    translate: 0 -5rem;
+    transform: translate(0, -5rem);
     -webkit-filter: blur(0.5rem);
     filter: blur(0.5rem);
   }
   100% {
     opacity: 1;
-    translate: 0 0;
+    transform: translate(0, 0);
     -webkit-filter: blur(0);
     filter: blur(0);
   }
@@ -149,13 +149,13 @@
     color: var(--primary-color);
     perspective: 10px;
     opacity: 0;
-    translate: 0 -5rem;
+    transform: translate(0, -5rem);
     -webkit-filter: blur(0.5rem);
     filter: blur(0.5rem);
   }
   100% {
     opacity: 1;
-    translate: 0 0;
+    transform: translate(0, 0);
     -webkit-filter: blur(0);
     filter: blur(0);
   }

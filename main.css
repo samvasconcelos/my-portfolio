@@ -12,12 +12,6 @@
 @import "./css/_projects.css";
 @import "./css/_contact.css";
 
-/* ------------------------------------------------- */
-
-/* inset: top, right, bottom, left */
-/* mix-blend-mode: multiply; */
-/* isolation: isolate; */
-
 /* ----------------------------  M A I N ---------------------------- */
 
 #main {
@@ -43,22 +37,20 @@
 .section-shadow-light {
   box-shadow: inset 0 -4rem 8.5rem -1rem var(--grey-color-9);
 }
-.light--section {
-  background-color: var(--white-color-4) !important;
-  border-bottom: 1px solid var(--grey-color-10) !important;
+#main .light--section {
+  background-color: var(--white-color-4);
+  border-bottom: 1px solid var(--grey-color-10);
 }
-/* ------- SECTIONS ------- */
 
-.text {
-  color: var(--white-color-4);
-}
-.light--header {
+/* ------- HEADER ------- */
+
+#header.light--header {
   background: linear-gradient(
     to bottom left,
     var(--grey-color-10),
     var(--white-color-3)
-  ) !important;
-  border-bottom: 1px solid var(--grey-color-10) !important;
+  );
+  border-bottom: 1px solid var(--grey-color-10);
 }
 
 /* ------- PROJECT CONTAINERS ------- */
@@ -72,7 +64,9 @@
 }
 
 /* ------ GENERAL ------- */
-
+.text {
+  color: var(--white-color-4);
+}
 .hidden {
   display: none;
 }

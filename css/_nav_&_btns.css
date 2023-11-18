@@ -25,7 +25,8 @@
   font-weight: 300;
 }
 
-/* ----- NAV-BTNS & HOVER ----- */
+/* ------------- NAV-BTNS & HOVER ------------ */
+
 .nav__btn {
   z-index: 8;
   padding: 1rem 1.5rem;
@@ -81,7 +82,7 @@
 .nav__btn:hover::before,
 .nav__btn:hover::after {
   opacity: 1;
-  text-shadow: 0 0.1rem 0.3rem var(--primary-color);
+  text-shadow: 0 0 0.5rem var(--primary-color);
 }
 .nav__btn:hover::before {
   transform: translate(-3.9rem, -0.4rem) rotateX(360deg);

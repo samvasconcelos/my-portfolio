@@ -2,9 +2,6 @@
 #about {
   position: relative;
   z-index: 1;
-  height: calc(-webkit-fit-content + 15rem);
-  height: calc(-moz-fit-content + 15rem);
-  height: calc(fit-content + 15rem);
   width: 100%;
   padding: 10rem 0;
   margin-top: -5rem;
@@ -19,7 +16,6 @@
 /* ------------- PROFILE ------------ */
 
 .about__profile {
-  /* margin-top: -4rem; */
   width: 100%;
   display: flex;
   align-items: center;
