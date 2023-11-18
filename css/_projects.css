@@ -186,6 +186,17 @@
     background-size: cover;
     background-position: bottom;
   }
+
+  @media screen and (min-height: 1000px) {
+    .project-description__title {
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .project-description {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 @media screen and (min-width: 800px) {

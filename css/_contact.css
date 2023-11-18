@@ -20,7 +20,7 @@
 }
 
 .contact--1 {
-  width: max(25rem, 30%);
+  width: max(35rem, 30%);
   display: flex;
   padding-block: 5rem;
   justify-content: space-evenly;
@@ -32,7 +32,7 @@
   justify-content: center;
   flex-direction: column;
   justify-content: space-evenly;
-  translate: 3rem 0;
+  transform: translate(2rem, 0);
 }
 
 .contact--2 div {
@@ -70,7 +70,7 @@
 .contact .logo:hover img {
   scale: 1;
   rotate: z 0deg;
-  translate: 0 0;
+  transform: translate(0, 0);
 }
 
 /* ---- CONTACT TIPTOOLS ---- */
@@ -87,6 +87,24 @@
   font-family: "Sen", "Poppins", sans-serif;
   font-size: 1.6rem;
   transform: translate(-9rem, -3rem) rotateX(270deg) scale(0.4);
+  color: var(--white-color-1) !important;
+  opacity: 0;
+
+  transition: 500ms;
+}
+.fa-github::after {
+  content: "GitHub";
+  display: inline-block;
+  position: absolute;
+  width: 10rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 1rem 1rem;
+  background-color: var(--grey-color-1);
+  font-family: "Sen", "Poppins", sans-serif;
+  font-size: 1.6rem;
+  transform: translate(-6.4rem, -3rem) rotateX(270deg) scale(0.4);
+  text-transform: capitalize;
   color: var(--white-color-1) !important;
   opacity: 0;
 
@@ -129,6 +147,7 @@
   transition: 500ms;
 }
 .fa-envelope:hover::after,
+.fa-github:hover::after,
 .fa-instagram:hover::after,
 .fa-linkedin:hover::after {
   text-shadow: none;
@@ -142,6 +161,9 @@
 }
 .fa-linkedin:hover::after {
   transform: translate(-7.7rem, -3.5rem) rotateX(0deg) scale(0.8);
+}
+.fa-github:hover::after {
+  transform: translate(-6.4rem, -3.5rem) rotateX(0deg) scale(0.8);
 }
 
 .copy {

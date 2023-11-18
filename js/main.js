@@ -4,17 +4,16 @@ import * as f from "./functions.js";
 
 // ---------------------------------------------
 // ELEMENTS
-const navMenu = document.querySelector(".nav__menu");
 const overlay = document.querySelector(".overlay");
 const body = document.querySelector("body");
 const brickContainer = document.querySelector(".bricks__container");
 const project = document.querySelectorAll(".project__container");
+const sunIcon = document.querySelector(".theme-btn__icon--sun");
+const themeBtnCircle = document.querySelector(".theme-circle-btn");
+
 // SECTIONS
 const header = document.getElementById("header");
 const section = document.querySelectorAll(".section");
-const about = document.getElementById("about");
-const brick1 = document.querySelectorAll(".brick-1");
-const brick2 = document.querySelectorAll(".brick-2");
 
 // TEXT
 const chamadaOla = document.querySelector(".chamada__animacao");
@@ -65,18 +64,18 @@ themeBtn.addEventListener("click", function () {
 
   if (darkThemeOn) {
     header.style.boxShadow = "0 1rem 3rem 0.5rem #181818";
+    sunIcon.style.opacity = 0;
   }
   if (!darkThemeOn) {
     header.style.boxShadow =
       "0 1rem 3rem 0.5rem var(--grey-color-8), inset 0 -5rem 3rem 0.5rem var(--grey-color-10)";
+    sunIcon.style.opacity = 1;
+    themeBtnCircle.style.backgroundImage = "./icons/sun-solid.svg";
   }
 
   // ALL TEXT
   text.forEach((t) => t.classList.toggle("dark--text"));
   navBtns.forEach((i) => i.classList.toggle("dark--text"));
-
-  // CURSOR ANIMATION COLOR
-  mainTitle.classList.toggle("light-box");
 
   // SECTIONS
   header.classList.toggle("light--header");
@@ -86,8 +85,8 @@ themeBtn.addEventListener("click", function () {
 
   // PROJECTS
   project.forEach((p) => {
-    p.classList.toggle("dark-box");
-    p.classList.toggle("light-box");
+    p.classList.toggle("dark-project");
+    p.classList.toggle("light-project");
   });
 
   // SHADOWS OF SECTIONS
@@ -116,7 +115,6 @@ menuBtn.addEventListener("click", function () {
 
   // SHOW MOBILE NAV
   overlay.classList.toggle("hidden");
-  navMenu.classList.toggle("show--menu");
   body.classList.add("scroll");
 
   // TOGGLE MENU OPEN ICON

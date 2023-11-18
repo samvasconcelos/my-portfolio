@@ -17,17 +17,17 @@ export function typeWriting(element, text) {
   }, 115);
 }
 
-// MENU REMOVE OPEN CLASS
-export function menuClose() {
-  menuLineTop.classList.remove("line-top-open");
-  menuLineMiddle.classList.remove("line-middle-open");
-  menuLineBottom.classList.remove("line-bottom-open");
-}
 // MENU TOGGLE OPEN CLASS
 export function menuToggle() {
   menuLineTop.classList.toggle("line-top-open");
   menuLineMiddle.classList.toggle("line-middle-open");
   menuLineBottom.classList.toggle("line-bottom-open");
+}
+// MENU REMOVE OPEN CLASS
+export function menuClose() {
+  menuLineTop.classList.remove("line-top-open");
+  menuLineMiddle.classList.remove("line-middle-open");
+  menuLineBottom.classList.remove("line-bottom-open");
 }
 
 export function menuToggleDarkColor() {
@@ -36,7 +36,7 @@ export function menuToggleDarkColor() {
   menuLineBottom.classList.toggle("dark-box");
 }
 
-// DOTS SECTION PROJETOS
+// DOTS SECTION PROJECTS
 let dotsCounter = 0;
 export function showDots() {
   dotsCounter++;
