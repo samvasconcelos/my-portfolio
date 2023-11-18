@@ -60,7 +60,7 @@
 }
 .light-project {
   border: 2px solid var(--grey-color-4);
-  background: var(--grey-color-10);
+  background-color: var(--grey-color-10);
 }
 
 /* ------ GENERAL ------- */
