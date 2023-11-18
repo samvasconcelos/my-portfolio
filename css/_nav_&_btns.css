@@ -135,7 +135,7 @@
   transition: scale 400ms;
 }
 
-/* --------------------------- NAV MENU TOGGLE BTN ------------------------- */
+/* --------------------------- NAV MENU BUTTON ------------------------- */
 
 .menu-toggle-btn {
   z-index: 5;
@@ -245,11 +245,15 @@
   box-shadow: inset 0 0 2.5rem #555, inset 1.5rem 0.5rem 1rem #222,
     0rem 0rem 0.5rem 0.5rem var(--primary-color);
 }
+.theme-btn__icon--sun {
+  opacity: 0;
+  transform: scale(0.6);
+}
 
 .theme-circle-btn {
   z-index: 4;
   display: block;
-  background-color: #333;
+  background-color: var(--grey-color-5);
   background-image: url(../icons/moon-regular.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -258,25 +262,21 @@
   height: 3.5rem;
   border-radius: 25px;
   transform: translate(0.5rem, 0);
-  box-shadow: inset 5px 5px 10px var(--grey-color-9),
-    inset -5px -5px 10px var(--grey-color-1);
+  box-shadow: inset 3px 3px 5px var(--grey-color-9),
+    inset -7px -7px 7px var(--grey-color-1);
 
-  /* transition */
-  transition: all 400ms;
+  transition: 400ms;
 }
 
 .icon--change {
   display: block;
   background-color: #eee;
-  background-image: url(../icons/sun-solid.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
+  background-image: none;
   width: 35px;
   height: 35px;
   border-radius: 25px;
   transform: translate(48px, 0px) rotateZ(22deg);
-  box-shadow: inset -5px -5px 10px #555;
+  box-shadow: inset -5px -5px 10px var(--grey-color-5);
 }
 
 /* -------------------- MEDIA QUERIES -------------------- */
