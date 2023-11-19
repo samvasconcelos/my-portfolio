@@ -1,5 +1,4 @@
 # my-portfolio
-My Portfolio Website
 
 This is a webpage I put together quickly as I was in the midst of a job application process and needed some projects to showcase.
 It got changed more than 5 times, including color schemes, ideas, different headers etc. 
