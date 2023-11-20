@@ -143,6 +143,120 @@
 
 /* -------- ORBS ORBIT -------- */
 
+@-webkit-keyframes orbita {
+  0% {
+    z-index: 1;
+    transform: translateY(0px) scale(1.3);
+    background-color: rgb(255, 196, 0);
+    box-shadow: 0 0 10px rgb(255, 196, 0);
+    opacity: 1;
+  }
+
+  5% {
+    z-index: 2;
+    transform: translateY(-5px) scale(1.7);
+    opacity: 1;
+  }
+  10% {
+    z-index: 3;
+    transform: translateY(-12px) scale(2.15);
+    background-color: rgb(166, 255, 0);
+    box-shadow: 0 0 10px rgb(166, 255, 0);
+    opacity: 1;
+  }
+  18% {
+    z-index: 4;
+    transform: translateY(-33px) scale(2.75);
+    background-color: rgb(30, 255, 0);
+    box-shadow: 0 0 10px rgb(30, 255, 0);
+    opacity: 1;
+  }
+  30% {
+    z-index: 5;
+    transform: translateY(-75px) scale(3.5);
+    background-color: rgb(0, 255, 170);
+    box-shadow: 0 0 10px rgb(0, 255, 170);
+    opacity: 1;
+  }
+  40% {
+    z-index: 6;
+    background-color: rgb(0, 183, 255);
+    box-shadow: 0 0 10px rgb(0, 183, 255);
+    opacity: 1;
+  }
+
+  45% {
+    z-index: 5;
+    transform: translateY(-140px) scale(2.5);
+    opacity: 1;
+  }
+  50% {
+    z-index: 2;
+    transform: translateY(-145px) scale(2);
+    background-color: rgb(0, 81, 255);
+    box-shadow: 0 0 10px rgb(21, 95, 255);
+    opacity: 1;
+  }
+  55% {
+    z-index: 2;
+    transform: translateY(-140px) scale(1.5);
+    opacity: 1;
+  }
+  60% {
+    z-index: 2;
+    background-color: rgb(111, 0, 255);
+    opacity: 1;
+  }
+  70% {
+    z-index: 2;
+    background-color: rgb(162, 0, 255);
+    box-shadow: 0 0 10px rgb(162, 0, 255);
+    opacity: 1;
+  }
+  74% {
+    z-index: 2;
+    transform: translateY(-85px) scale(1);
+    opacity: 1;
+  }
+  79% {
+    z-index: 2;
+    background-color: rgb(255, 0, 221);
+    box-shadow: 0 0 10px rgb(255, 0, 221);
+    opacity: 1;
+  }
+  85% {
+    z-index: 1;
+    transform: translateY(-25px) scale(1);
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    background-color: rgb(255, 0, 85);
+    box-shadow: 0 0 10px rgb(255, 0, 85);
+    opacity: 1;
+  }
+  90% {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    opacity: 1;
+  }
+
+  95% {
+    transform: translateY(-1.5px) scale(1);
+    z-index: 1;
+    background-color: rgb(255, 136, 0);
+    box-shadow: 0 0 10px rgb(255, 187, 0);
+    opacity: 1;
+  }
+
+  100% {
+    z-index: 1;
+    transform: translateY(0px) scale(1.3);
+    background-color: #333333;
+    background-color: rgb(255, 196, 0);
+    box-shadow: 0 0 10px rgb(255, 196, 0);
+    opacity: 1;
+  }
+}
+
 @keyframes orbita {
   0% {
     z-index: 1;
@@ -227,6 +341,7 @@
   85% {
     z-index: 1;
     transform: translateY(-25px) scale(1);
+    -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
     background-color: rgb(255, 0, 85);
     box-shadow: 0 0 10px rgb(255, 0, 85);
@@ -253,6 +368,17 @@
     background-color: rgb(255, 196, 0);
     box-shadow: 0 0 10px rgb(255, 196, 0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes float {
+  0%,
+  100% {
+    transform: translateY(-3.6rem);
+  }
+
+  50% {
+    transform: translateY(-2rem);
   }
 }
 

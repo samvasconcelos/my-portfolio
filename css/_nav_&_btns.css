@@ -28,7 +28,6 @@
 /* ------------- NAV-BTNS & HOVER ------------ */
 
 .nav__btn {
-  z-index: 8;
   color: var(--white-color-4);
   padding: 1rem 1.5rem;
   margin-inline: 1rem;
@@ -41,8 +40,7 @@
 }
 .nav__btn::before {
   content: "<";
-  z-index: 8;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline-block;
   position: absolute;
   background: -webkit-linear-gradient(

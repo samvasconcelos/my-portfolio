@@ -6,9 +6,13 @@
   padding: 4rem 2.5rem 2rem;
 
   /* ANIMATION */
+  -webkit-animation-name: float;
   animation-name: float;
+  -webkit-animation-duration: 5s;
   animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .skills__grid {
